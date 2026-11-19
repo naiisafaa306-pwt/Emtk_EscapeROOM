@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ESCAPE THE CIPHER ROOM</title>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="scan"></div>
+<div id="load"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="#35E0F2" stroke-width="3"><circle cx="28" cy="28" r="22"/><path d="M28 12v16l11 7"/></svg><div class="mono" style="color:var(--cy)">INITIALIZING CIPHER LAB</div><div class="bar"><i id="lb"></i></div></div>
+
+<div id="menuV">
+<header class="top"><div class="logo"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="#35E0F2" stroke-width="2"><rect x="4" y="13" width="22" height="14" rx="3"/><path d="M9 13V9a6 6 0 0112 0v4"/><circle cx="15" cy="20" r="2"/></svg>CIPHER LAB</div><button id="snd" aria-label="Suara">Suara: ON</button></header>
+<main id="menu"><div>
+<div class="eyebrow">CIPHER LAB // CLASSIFIED PROJECT</div>
+<h1>ESCAPE THE CIPHER ROOM</h1>
+<div class="sub">Crack the code. Decode the truth. Find your way out.</div>
+<p class="desc">Pecahkan kode, ungkap pesan tersembunyi, dan temukan jalan keluar sebelum sistem mengunci fasilitas selamanya.</p>
+<div class="row"><button class="pri" id="start">START MISSION</button><button id="how">HOW TO PLAY</button><button id="edt">EDIT SOAL</button><button id="rmb">Kurangi animasi: OFF</button></div>
+<div class="tags">4 LEVELS • MATHEMATICAL PUZZLES • TIME CHALLENGE</div></div>
+<div id="board" class="panel board"></div>
+</main></div>
+
+<div id="game" class="hide">
+<header class="top" style="padding:12px 0"><div class="logo">CIPHER LAB</div><div class="ctrl" style="margin:0"><button id="snd2">Suara</button><button id="pauseB">Pause</button></div></header>
+<div class="panel hud"><div><small>LEVEL</small><span class="st" id="hL"></span></div><div><small>WAKTU LEVEL</small><span class="st" id="hT"></span></div><div><small>SCORE</small><span class="st" id="hS"></span></div><div><small>NYAWA</small><span class="st" id="hV" role="img"></span></div><div><small>HINTS</small><span class="st" id="hH"></span></div></div>
+<div class="pbar"><i id="pb"></i></div>
+<div class="main"><div class="panel scene"><svg id="scene" viewBox="0 0 640 400" role="group" aria-label="Ruangan laboratorium"></svg><div class="obj" id="obj"></div></div>
+<div class="panel puz" id="puz"></div></div></div>
+
+<div id="result" class="hide"></div>
+<footer>EDUCATIONAL GAME PROJECT</footer>
+<div id="mod"></div>
+
+
+<script src="script.js"></script>
+</body></html>
